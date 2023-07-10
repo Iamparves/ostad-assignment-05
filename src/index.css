@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: hsl(218, 25%, 96%);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.header {
+  background: #FFF;
+  padding: 12px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.content {
+  width: calc(100% - 30px);
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.form textarea {
+  border: 1px solid #ddd;
+  height: 150px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  resize: none;
+  width: 100%;
+  outline: none;
+}
+
+.form button {
+  color: #fff;
+  background: #7E6CCA;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  padding: 10px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 200ms ease;
+}
+
+.form button:hover {
+  background: hsl(251, 47%, 55%);
+}
+
+.text {
+  margin-top: 30px;
+  background: hsl(0, 0%, 97%);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.footer {
+  background: #FFF;
+  padding: 15px 10px;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+  color: #555;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+.quote span {
+  color: #888;
+}
+
+@media screen and (max-width: 576px) {
+  .content {
+    padding: 20px;
+  }
+  
+
+  .form textarea {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .form button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .text {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .quote {
+    font-size: 15px;
+  }
+}
